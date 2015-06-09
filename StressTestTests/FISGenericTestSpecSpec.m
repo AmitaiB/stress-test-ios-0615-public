@@ -21,12 +21,12 @@ describe(@"FISGenericTestSpec", ^{
         describe(@"let's work with the beKindOf matcher!", ^{
             it(@"create an NSString and test that it is kind of class NSString",^{
                 NSString *foo = @"Bless you!";
-                expect(foo).to.beInstanceOf([NSString class]);
+                expect(foo).to.beKindOf([NSString class]);
             });
             
             it(@"create an NSArray and test that it is kind of class NSArray",^{
                 NSArray *fooTwo = @[@"Bless", @"you!"];
-                expect(fooTwo).to.beInstanceOf([NSArray class]);
+                expect(fooTwo).to.beKindOf([NSArray class]);
             });
         });
         
